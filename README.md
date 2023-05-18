@@ -29,3 +29,9 @@ Vamos conferir formas de realizar os itens listados acima.
 * `document.removeChild()` - Remove um elemento HTML.
 * `document.replaceChild()` - Substitui um elemento HTML.
 * `document.createElement()` - Cria um elemento HTML.
+
+**Funções no JavaScript**
+
+- Funções Anônimas
+- Funções Nomeadas
+- Arrow
