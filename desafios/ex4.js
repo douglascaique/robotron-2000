@@ -1,9 +1,16 @@
-const lista = document.querySelector("ul");
+const listaBotoes = document.querySelectorAll('[botao]');
 
-document.querySelector("#botao").addEventListener("click", () => {
-  lista.setAttribute("data-lista", "mostrar");
-});
+listaBotoes.forEach( (elemento) => {
+    elemento.addEventListener('click', (evento) => {
+        mostraLista(evento.target.textContent);
+    })
+})
 
-document.querySelector(".close").addEventListener("click", () => {
-  lista.setAttribute("data-lista", "esconder");
-});
+function mostraLista(texto) {
+    lista = document.querySelector('[lista]');
+    if (texto === 'Mostra Aluratintas em estoque') {
+        lista.style.display = "block";
+    } else if (texto === 'Apaga Aluratintas em estoque') {
+        lista.style.display = "none";
+    }
+}

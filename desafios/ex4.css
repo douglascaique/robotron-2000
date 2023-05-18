@@ -84,3 +84,5 @@
   [cor="preto"] {
     color: black;
   }
+
+  [data-lista="mostrar"] { display: block; } [data-lista="esconder"] { display: none; }
